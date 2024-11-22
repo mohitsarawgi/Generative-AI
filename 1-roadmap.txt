@@ -1,0 +1,25 @@
+
+1) Python    (Completed)
+
+2) Machine Learnign For NLP -> 
+    
+     1) Text PreProcessing -> Cleaning text -> Tokenization, Lemmatization, Stemming, Stopwords
+     2) Text PreProcessing -> Textdata to vectors -> bagofwords,TFIDF, unigram, bigram
+     3) Text PreProcessing -> Advaned text 2 vector ->  WORD2VEC, aveWord2veg 
+
+3) Deep learning For NLP ->
+    
+     1) Neural Networks -> Deep learning Technique -> RNN, LSTM RNN, GRU RNN
+     2)  Text PreProcessing -> Word Embedding
+     3)  Transformers
+     4)  BERT
+
+
+                    
+
+
+
+
+
+
+Libraries -> NLTK, Spacy
