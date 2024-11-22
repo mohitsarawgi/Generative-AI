@@ -1,0 +1,43 @@
+  
+  # Basics Terminologies
+
+  1) Corpus -> A paragraph
+  2) Documents -> Sentences
+  3) Vocabulary -> All the unique words in a dictionary
+  4) Words -> All words in a Corpus
+
+
+  # Tokenization
+
+  Converting a paragraph or sentencs in Tokens
+
+           
+           Corpus-
+
+ I am Mohit Sarawgi, and i am graduated in 2024 
+ I am interested in generative AI. I like to play
+ Chess. i am a powerlifter.
+
+
+         (Sentences)
+
+1) I am Mohit Sarawgi
+2) I am Graduated in 2024.
+3) I am interested in generative AI.
+4) I like to play Chess
+5) i am a powerlifter
+
+
+     Now we apply Tokenization.
+
+     Sentensed can be a Token.
+ or  Words can be a Token.
+
+
+
+
+# Unique Words
+
+I love cats and my friend love dogs,
+
+     Total unique words => 7 as love repeating 2ice , 7 = vocabulary
