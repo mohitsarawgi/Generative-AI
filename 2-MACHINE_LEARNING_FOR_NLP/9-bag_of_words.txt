@@ -1,0 +1,59 @@
+
+ 
+ s1 = he is a good boy
+ s2 = she is a good girl
+ s3 = boy and girl are good
+
+ after applying stopwords
+
+ s1 = good boy
+ s2 = good girl
+ s3 = boy girl good
+
+
+ unique words  = good boy girl = 3
+                  3    2    2    freq
+
+
+ vocabulary      freq
+
+ good             3
+ boy              2
+ girl             2
+
+
+converting into Vector
+  
+     good  boy  girl
+s1    1     1    0
+s2    1     0    1
+s3    1     1    1
+
+
+Two types of bog 
+1) binary
+2) Count updated
+
+
+
+
+#   Advantages                 Disadvantages
+
+1) simple and intuative      1) Sparse matrix (large size matrix) overfitting
+2) Fixed vector i/p          2) Ordering of word is changing, (based on frequency), therefore meaning is also changing
+                             3) cannot add new word, (out of vocabulary)
+                             4) semantic meaning is still not getting captured
+
+
+                            The food is good
+                            The food is not good
+
+                            vector = s1 [1 1 1 0 1]
+                                     s2 [1 1 1 1 1] 
+
+                                     matrix is very similar 
+                                     even both have very different meaning
+
+                                    *The graph should not be similar...
+
+                                    

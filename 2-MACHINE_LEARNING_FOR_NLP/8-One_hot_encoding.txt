@@ -1,0 +1,42 @@
+
+# One HOt Encoding
+
+d1 - the food is good
+d2 - the food is bad
+d3 - pizza is amazing
+|
+|    unique words -  the food is good bad pizza amazing
+|                     1    2  3   4    5   6      7
+|                  
+|
+|       Vector representation
+\/
+the food is good
+d1 = [[1 0 0 0 0 0 0],
+      [0 1 0 0 0 0 0],
+      [0 0 1 0 0 0 0],
+      [0 0 0 1 0 0 0]]  # good  = 4 in unique words, 
+
+the food is bad
+d2 = [[1 0 0 0 0 0 0],
+      [0 1 0 0 0 0 0],
+      [0 0 1 0 0 0 0],
+      [0 0 0 0 1 0 0]]  # 1 placed is in 5, which is '5' bad in unique
+
+
+pizza is amazing
+d3 = [[0 0 0 0 0 1 0],  6 = pizza, present
+      [0 0 1 0 0 0 0],  3 = is, present
+      [0 0 0 0 0 0 1]]  7 = amazing, present
+
+
+
+
+
+
+# Advantages                          Disadvantages
+
+1) Easy to implement              1) Sparse matrix leads to overfitting
+   [sklearn onehotencoder]        2) size of matrix is uneven, cannot train model
+                                  3) No semantic is meaning is getting captured
+                                  4) Out of vocabulary
