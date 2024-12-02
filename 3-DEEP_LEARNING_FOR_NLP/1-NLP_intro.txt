@@ -1,0 +1,6 @@
+ 
+  We will be using ANN and RNN in NLP 
+
+  NLP requires Sequential Data.. 
+
+  Simple RNN -> LSTM/GRU RNN -> Bidirectional RNN -> Encoder Decoder -> Self attention -> Transformer.

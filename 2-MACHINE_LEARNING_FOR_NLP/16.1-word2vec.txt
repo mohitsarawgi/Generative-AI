@@ -1,0 +1,29 @@
+
+
+ Word2Vec (supervised)   - pretrained model or train a model from scratch
+
+ CBOW - (continous bag of words)
+
+
+  Let example - 
+
+    Google is working on machine learning and deep learning
+
+    e.g = windows size = 5
+
+    *let select first window and take mid word as output
+
+
+
+             i/p                             o/p
+
+w1    Google, is, on, machine               working
+w2    is, working,machine,learning          on
+w3    working, on, learning, and            machine
+w4    on, machine, and, deep                learning
+w5    machine, learning, deep, learning     and
+
+
+
+using one hot encoding we convert each word in vectors, then train our model
+by connecting each vector to one another..

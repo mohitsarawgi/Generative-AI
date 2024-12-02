@@ -1,0 +1,33 @@
+
+
+ Word2Vec -> It uses a neural network model to learn word association
+             from a large corpus of text.
+             Once trained, such model can detect synonymous words
+             or suggest additional words for partial sentence.
+             As the name implies, word2vec represents each distinct 
+             word with a particular list numbers called vectors.
+
+      Each word in a vocabulary will be converted into a
+      feature representation..
+
+
+Feature Representation ,  300 DIMENTIONS
+
+                     Boy    Girl   King    Queen     Apple     Orange
+                     
+Such as - Gender     -1      1     -0.92   0.96       0.001     0.002
+          Royal      0.01
+          Age        062      ...
+          Food
+          ....
+
+          * -1 , +1 -> represents opposite gender..
+
+
+          King - Boy + Queen = Girl
+
+
+* Cosine Similarity - distance between two vectors
+
+Distance = 1 - cosine Similarity
+cosine Similarity = cos@

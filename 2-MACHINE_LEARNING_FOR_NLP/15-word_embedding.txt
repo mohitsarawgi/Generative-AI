@@ -1,0 +1,19 @@
+
+
+Word Embedding -> Is used for the representation of words for 
+                  text analysis, typically in the form of a real-valued
+                  vector that encodes the meaning of the word such that
+                  the words that are closer in the vector space are 
+                  expected to be similar in meaning.
+
+                  happy excited -- similar
+                  angry         -- oposite
+
+
+Types -
+        1) Count or frequency -> OHE, BOW, TF-IDF
+        2) Deep learning trained model (higher accuracy) -> word2vec
+
+
+  word2vec -> 1) Countinous bag of words
+              2) skipgram
