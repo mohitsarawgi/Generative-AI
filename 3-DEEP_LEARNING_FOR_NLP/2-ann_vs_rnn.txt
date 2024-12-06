@@ -1,0 +1,99 @@
+Can we solve sequential data with ANN..
+
+
+
+Dataset {sentiment analysis}
+
+    Text                 o/p
+
+the food is good          1
+the food is bad           0
+the food is not good      0
+
+
+ANN   : TEXTPROCESSING -> Text -> Vector 
+
+
+Unique words -> food good bad not (vocabulary = 4)
+
+
+Text to vector -> Bag of words
+
+        food   good   bad   not
+
+    s1   1      1      0     0
+    s2   1      0      1     0
+    s3   1      1      0     1
+
+  * Have fixed vector size
+
+
+The matrix is our inputs that we have to give it to Neural Network
+
+- These are text data -> WHERE SEQUENCE IS IMPORTANT
+
+But The inputs are not in sequence, (WE ARE LOOSING THE SEQUENCE)
+
+Therefore, Meaning of the text is lost..
+
+
+
+
+
+
+  * Whenever we work with text data, to get the sequence of information.
+   It is good to give 1 word at a time.
+
+
+   But in ANN We provide, multiple inputs..
+
+   eg:
+
+         food  good  bad  not
+
+     s1   1    1     0    0
+
+
+          I/p   Hidden layer   o/p
+
+          1      
+          1        o
+          0        o           o    -- Y
+          0        o
+                S1,S2,S3
+
+
+        So we have to Provide inputs based on TIME STAMP
+
+
+
+
+
+        Thats Why we use  -> Simple RNN (Recurrent Neural Network)
+                               Data -> Sequential
+
+
+        
+         ANN -> I/P -> HIDDEN LAYER -> O/p
+
+
+         RNN -> I/P -> Hidden layer  -> O/p
+                           |    |
+                           |____|
+                           Feedback loop , It will send feedback to everyother node..
+
+
+
+
+                
+                the   food   is    good
+                x11    x12   x13    x14
+
+
+                At - time 1 -> x11
+                        t2  -> x12
+                        t3  -> x13
+                        t4  -> x14
+                   * One word at a time..
+
+                
