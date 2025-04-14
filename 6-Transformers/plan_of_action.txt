@@ -1,0 +1,20 @@
+TRANSFORMER -> 
+
+1) WHY?? 
+2) Architecture??
+3) Self Attention
+4) Positional Encoding
+5) Multi head Attention
+6) Combining working of Transformers
+
+What And Why Transformers --> 
+
+Transformers are a natural Language Processing are a type of deep learning 
+model that use self-attention to analyze and process natural language data
+They are Encoder decoder models that can be used for many applications, including machine 
+translation (seq-to-seq tasks)
+
+Transformers Solves 2 Problems - 
+   1) It sents all the words parallely to encoder and it does not dependent to time stamp
+   2) It uses self attention -> which follows contextual embedding 
+       means every word is not related to every other words.
