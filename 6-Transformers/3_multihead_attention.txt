@@ -1,0 +1,20 @@
+Its Just same as self attention
+
+but the catch is - we create and train two vectors at once
+
+like - cat - 1 0 1 0
+       sat - 0 1 0 1   this both will be processed as one vectors
+
+       1) linear embidding
+       2) multiplying with trained weighted matrix (dot product)
+       3) scaling
+       4) softmax 
+       5) we get z vector
+
+in self attention we only get 1 - z vector
+
+but now we will get many z - vectors as all of them 
+have many permutation and combination values
+
+it will expand the model ability to focus on different 
+positions of token..

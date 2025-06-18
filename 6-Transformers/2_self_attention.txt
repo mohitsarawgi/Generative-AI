@@ -1,0 +1,62 @@
+
+
+ Self Attention -> also called scale dot product attention
+            - Allows the model to weigh the importance of 
+            different tokens.
+
+ # Inputs -> Query , Key , Values (model -> 3 vector computed)
+
+
+
+ ## Query Vector-> The tokens for which we are calculating attention
+                  - It helps determine the importance of other tokens
+                    in the context of other vectors
+
+        =Importance - 1\ Queries helps the model to determone which part of 
+                         sequence to focus on for each specific tokens.
+                         by calculating the dot product between query vector and all 
+                         key vector.
+
+                      2/ understand the relation btw current token and rest of the sequence 
+
+
+
+
+## Key Vector -> It represents all the tokens in the sequence and are used to compare 
+                 and are used to compare with the query vectors to calculate attention score
+
+        
+        =Importance - Relevance Measurment : keys are compared with Queries
+                      to measure the relevance or compatibility of each tokens
+                      with the current token.
+                      This comparison helps in determining how much attention 
+                      each token should recieve
+
+        information retrival : keys are very important to retrive the most relevant information
+                               from the sequence by providing a basis for the attention to compute similar score
+
+
+
+## Value Vectors : holds the actual information that will be aggregated to form the output of the 
+                  attention mechanism
+
+    information aggregation -> values contains the data that will be 
+                               weighted by the attention scores. the weighted sum of values
+                               forms the output of self-attention mechanism, which is then passed
+                               on to the next layers in the network.
+
+    context preservation: by weighing the values according to the attention scores, the model preserves
+                          and aggregates relevant context from the entire sequence, which is crusial for the tasks like
+                        translation, summarization
+
+
+
+
+
+1) Token embedding    
+2) Linear Transformation -> multiplying with learned weight matrix
+3) here we get -> Q, K, V (vectors)
+4) Compute Attention Score = score(Q, kn)
+5) Scaling -> \|dimention(K) -> to overcome softmax saturation and gradient exploding
+6) Apply softmax
+7) Weighted sum of values -> x1*V'the' + x2*V'Cat' + x3*V'Sat' (similarly for all)
