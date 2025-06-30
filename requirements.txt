@@ -1,0 +1,14 @@
+langchain
+ipykernel
+python-dotenv
+langchain_community
+
+
+# for data ingestion techniques
+pypdf
+bs4 # it is used to load data from websites ''WebBaseLoader'' -> bs4 = beautiful soup
+arxiv
+pymupdf
+
+# for splittin data into text ( all different techniques)
+langchain-text-splitters
