@@ -1,0 +1,17 @@
+
+# Important Components and Modules
+
+1> Rag -> Retrival Augmented Generation -> 
+    
+     load (data->data sources) / Data Ingestion (langchain)
+     Split (divide data into smaller chunkes) (Data Transformation)
+     Embed (Data(Text) to Vectors)
+     Store (Vector store Data Base) -> if query -> context information
+
+
+2> Question -> Retrive -> Promt(AI Assistant) -> LLM -> Answer
+            (Retrival Chain) -> Interface -> for Quering Vector Store DB
+
+
+
+# Data Ingestion With Document Loader

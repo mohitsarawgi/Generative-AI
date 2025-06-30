@@ -1,0 +1,11 @@
+prefix=/home/mohit/Desktop/Langchain/venv
+exec_prefix=/home/mohit/Desktop/Langchain/venv
+libdir=/home/mohit/Desktop/Langchain/venv/lib
+includedir=/home/mohit/Desktop/Langchain/venv/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid
